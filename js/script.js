@@ -74,6 +74,8 @@ const fourthOfJulyNextYear = new Date(year + 1, 6, 4).getTime();
 const month = new Date().getMonth();
 
 // countdown
+let timer = setInterval(function() {
+
   // get today's date
   const today = new Date().getTime();
 
@@ -111,6 +113,8 @@ const month = new Date().getMonth();
   <div class=\"seconds\"> \
     <div class=\"numbers\">" + seconds + "</div>seconds</div> \
   </div>";
+
+}, 1000);
 
 // -------------------------------------------------------------
 	//   Centered Navigation
